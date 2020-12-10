@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sidenav {
+  width: 25%; /* Set the width of the sidebar */
+  height: 100%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  left: 0;
+  background-color: #999999; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-bottom: 25%;
+}
+
+.student1 {
+  width: 37.5%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  left: 25%;
+  background-color: #0000; /* Not Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-bottom: 100%;
+}
+
+.student2 {
+  width: 37.5%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  left: 62.5%;
+  background-color: #0000; /* Not Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-bottom: 100%;
+}
+
+.studentTextArea1 {
+  width: 37.5%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  left: 25%;
+  background-color: #0000; /* Not Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-bottom: 23%;
+}
+.percent {
+  text-align: center;
+  color: white;
+  margin: auto;
+  width: 50%;
+  background-color: red;
+  border: 5px solid black;
+  padding-top: 25px;
+  padding-bottom: 25px
+  
+}
+
+.sim-block {
+  padding: 10px;
+  
+}
+
+.sim-list {
+  border: 2px solid black;
+  position:fixed;
+  overflow-y: scroll;
+  width: 23.5%;
+  max-height: 50%;
+  
+}
+
+
+
+.studentTextArea2 {
+  width: 37.5%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  left: 62.5%;
+  background-color: #0000; /* Not Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-bottom: 23%;
+}
+
+.progressBar {
+  width: 25%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  left: 0;
+  background-color: #999999; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-bottom: 20%;
+}
+
+<<<<<< HEAD
+.Dropzone {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  border: 2px dashed rgb(187, 186, 186);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.Icon {
+  opacity: 0.3;
+  height: 64px;
+  width: 64px;
+}
+
+.FileInput {
+  display: none;
+}
+
+.Highlight {
+  background-color: rgb(188, 185, 236);
+}
