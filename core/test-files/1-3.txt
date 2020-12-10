@@ -1,0 +1,8 @@
+
+; factorial
+(define (fac num)
+  (cond [(= num 0) 1]
+        [else (* num (fac (- num 1)))]))
+
+(fac 0)
+(fac 5)

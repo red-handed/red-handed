@@ -1,0 +1,7 @@
+(define (majorfunction _)
+  (the_fact 10))
+
+
+(define (the_fact numericvalue)
+  (cond [(= numericvalue 0) 1]
+        [else (* numericvalue (the_fact (- numericvalue 1)))]))

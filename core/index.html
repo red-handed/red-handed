@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>RedHanded</title>
+
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+
+<body onLoad="onloadfunction()">
+  </nav>
+  </nav>
+  <h1 style="text-align: center; padding: 20px;">RedHanded</h1>
+  <blockquote className="blockquote">
+    <footer className="blockquote-footer"
+            style="text-align: center;">"Their words, not mine"</footer>
+  </blockquote>
+  <br>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm">
+        <div class="form-group"
+             style="padding: 40px;">
+
+          <textarea style="width: 400px;"
+                    class="form-control"
+                    id="inputlhs"
+                    rows="15">
+</textarea>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="form-group"
+             style="padding: 40px;">
+
+          <textarea style="width: 400px;"
+                    class="form-control"
+                    id="inputrhs"
+                    rows="15">
+</textarea>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <button type="submit"
+            id="submitbtn"
+            class="btn btn-primary">Submit</button>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <pre id="displaylhs"
+             style="padding: 40px;"></pre>
+      </div>
+
+      <div class="col-sm">
+        <pre id="displayrhs"
+             style="padding: 40px;"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

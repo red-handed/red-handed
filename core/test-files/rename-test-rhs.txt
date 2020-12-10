@@ -1,0 +1,12 @@
+(define ip-eht 3.14)
+
+(define (tcaf n)
+  (cond [(= 0 n) 1]
+        [else (* n (fact (- n 1)))]))
+
+(define tau 6.28)
+
+(define (sum-both-nat n m)
+  (if (or (< n 0) (< m 0))
+      "bad"
+      (+ n m)))

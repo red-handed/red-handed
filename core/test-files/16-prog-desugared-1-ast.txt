@@ -1,0 +1,223 @@
+{
+   "kind": "Program",
+   "body": [
+      {
+         "kind": "VariableDefinition",
+         "name": "the-pi",
+         "expr": {
+            "kind": "NumericLiteral",
+            "value": "3.14"
+         },
+         "location": {
+            "start": {
+               "offset": 0,
+               "line": 1,
+               "column": 1
+            },
+            "end": {
+               "offset": 20,
+               "line": 1,
+               "column": 21
+            }
+         }
+      },
+      {
+         "kind": "FunctionDefinition",
+         "name": "fact",
+         "params": [
+            "n"
+         ],
+         "body": {
+            "kind": "if",
+            "test": {
+               "kind": "CallExpression",
+               "callee": "=",
+               "args": [
+                  {
+                     "kind": "NumericLiteral",
+                     "value": "0"
+                  },
+                  {
+                     "kind": "Identifier",
+                     "name": "n"
+                  }
+               ]
+            },
+            "then": {
+               "kind": "NumericLiteral",
+               "value": "1"
+            },
+            "else": {
+               "kind": "CallExpression",
+               "callee": "*",
+               "args": [
+                  {
+                     "kind": "Identifier",
+                     "name": "n"
+                  },
+                  {
+                     "kind": "CallExpression",
+                     "callee": "fact",
+                     "args": [
+                        {
+                           "kind": "CallExpression",
+                           "callee": "-",
+                           "args": [
+                              {
+                                 "kind": "Identifier",
+                                 "name": "n"
+                              },
+                              {
+                                 "kind": "NumericLiteral",
+                                 "value": "1"
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         },
+         "location": {
+            "start": {
+               "offset": 22,
+               "line": 3,
+               "column": 1
+            },
+            "end": {
+               "offset": 90,
+               "line": 6,
+               "column": 29
+            }
+         }
+      },
+      {
+         "kind": "VariableDefinition",
+         "name": "tau",
+         "expr": {
+            "kind": "NumericLiteral",
+            "value": "6.28"
+         },
+         "location": {
+            "start": {
+               "offset": 92,
+               "line": 8,
+               "column": 1
+            },
+            "end": {
+               "offset": 109,
+               "line": 8,
+               "column": 18
+            }
+         }
+      },
+      {
+         "kind": "FunctionDefinition",
+         "name": "lifted",
+         "params": [
+            "n",
+            "m"
+         ],
+         "body": {
+            "kind": "if",
+            "test": {
+               "kind": "or",
+               "args": [
+                  {
+                     "kind": "CallExpression",
+                     "callee": "<",
+                     "args": [
+                        {
+                           "kind": "Identifier",
+                           "name": "n"
+                        },
+                        {
+                           "kind": "NumericLiteral",
+                           "value": "0"
+                        }
+                     ]
+                  },
+                  {
+                     "kind": "CallExpression",
+                     "callee": "<",
+                     "args": [
+                        {
+                           "kind": "Identifier",
+                           "name": "m"
+                        },
+                        {
+                           "kind": "NumericLiteral",
+                           "value": "0"
+                        }
+                     ]
+                  }
+               ]
+            },
+            "then": {
+               "kind": "StringLiteral",
+               "value": "bad"
+            },
+            "else": {
+               "kind": "CallExpression",
+               "callee": "+",
+               "args": [
+                  {
+                     "kind": "Identifier",
+                     "name": "n"
+                  },
+                  {
+                     "kind": "Identifier",
+                     "name": "m"
+                  }
+               ]
+            }
+         },
+         "location": {
+            "start": {
+               "offset": 111,
+               "line": 10,
+               "column": 1
+            },
+            "end": {
+               "offset": 186,
+               "line": 13,
+               "column": 16
+            }
+         }
+      },
+      {
+         "kind": "FunctionDefinition",
+         "name": "sum-both-nat",
+         "params": [
+            "n",
+            "m"
+         ],
+         "body": {
+            "kind": "CallExpression",
+            "callee": "liffted",
+            "args": [
+               {
+                  "kind": "Identifier",
+                  "name": "n"
+               },
+               {
+                  "kind": "Identifier",
+                  "name": "m"
+               }
+            ]
+         },
+         "location": {
+            "start": {
+               "offset": 188,
+               "line": 15,
+               "column": 1
+            },
+            "end": {
+               "offset": 231,
+               "line": 16,
+               "column": 17
+            }
+         }
+      }
+   ]
+}

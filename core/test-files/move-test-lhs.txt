@@ -1,0 +1,6 @@
+(define tau 6.28)
+
+(define (sum-both-nat n m)
+  (if (or (< n 0) (< m 0))
+      "bad"
+      (+ n m)))

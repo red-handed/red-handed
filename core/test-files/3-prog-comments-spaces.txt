@@ -1,0 +1,74 @@
+(
+
+define 
+
+;;;; ;; HELLO BYE
+
+the-pi
+ 3.14)
+
+
+
+#|
+;;;; ;; HELLO BYE
+;;;; ;; HELLO BYE
+;;;; ;; HELLO BYE
+|#
+
+
+( define     ( 
+fact     n    )
+       ( cond [
+( = 
+0
+ n ) 1]
+        [ else ( 
+  * n ( 
+  fact ( - n 1 )
+        )
+        )
+        ]
+        ) )
+
+
+
+( define 
+
+ tau 6.28 
+)
+
+#|
+
+elevator
+
+
+|#
+
+(
+
+
+
+define 
+
+
+(sum-both-nat 
+  n m )
+  ( if 
+(
+ or ( < n 0 )       
+
+       ( < m 0 )
+
+      )
+      "bad"
+      ( 
+ + n
+
+       m
+ )
+; nuclear
+)
+
+
+)
+

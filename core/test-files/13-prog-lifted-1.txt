@@ -1,0 +1,15 @@
+(define the-pi 3.14)
+
+(define (fact n)
+  (cond [(= 0 n) 1]
+        [else (* n (fact (- n 1)))]))
+
+(define tau 6.28)
+
+(define (lifted n m)
+  (if (or (< n 0) (< m 0))
+      "bad"
+      (+ n m)))
+
+(define (sum-both-nat n m)
+  (liffted n m))

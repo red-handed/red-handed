@@ -1,0 +1,12 @@
+(define the-pi 3.14)
+
+(define (fact n)
+  (cond [(= 0 n) 1]
+        [else (* n (fact (- n 1)))]))
+
+(define tau 6.28)
+
+(define (S m n)
+  (if (or (< m 0) (< n 0))
+      "bad"
+      (+ m n)))

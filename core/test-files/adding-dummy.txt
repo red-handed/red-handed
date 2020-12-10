@@ -1,0 +1,10 @@
+(define (main _)
+  (factorial 10))
+
+
+(define (factorial n)
+  (cond [(= n 0) 1]
+        [else (* n (factorial (- n 1)))]))
+
+(define (dummy x)
+  x)
